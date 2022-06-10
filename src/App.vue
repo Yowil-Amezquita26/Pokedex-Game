@@ -1,8 +1,10 @@
 <template>
-  <PokemonSearch />
+  <pokemon-home />
 </template> 
 
 <script>
+
+import PokemonHome from './pages/PokemonHome.vue'
 
 import PokemonPage from './pages/PokemonPage.vue'
 import PokemonSearch from './pages/PokemonSearch.vue'
@@ -15,6 +17,7 @@ export default {
   components: {
     PokemonSearch,
     PokemonPage,
+    PokemonHome,
 }
 }
 </script>

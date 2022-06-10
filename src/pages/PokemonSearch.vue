@@ -29,8 +29,6 @@ import PokemonInfo from '@/components/PokemonInfo.vue'
 import styles from '@/css/styles.css'
 
 
-
-
 export default {
     components: { PokemonInfo, Pokedex, styles },
     data(){
@@ -56,8 +54,12 @@ export default {
                 // console.log(this.searchPokemon,"hi");
                 this.pokemonName = this.searchPokemon[0].name
                 this.returnPicture = this.searchPokemon[0].picture
+                // if(this.returnPicture == null){
+                //     console.log("need asset");
+                //     this.returnPicture = "@/assetes/pokeball.jpg"
+                // }
                 this.statusPoke = true
-               console.log(this.searchPokemon[0].types);
+            //    console.log(this.searchPokemon[0].types);
             //    this.pokemonName =await (await pokemonApi.get(`/${this.pokemon}`)).data
             //     console.log(pokemonName);
                 this.pokemon = null

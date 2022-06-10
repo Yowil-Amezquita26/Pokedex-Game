@@ -23,7 +23,7 @@ const getPokemonDetails = async (pokemon = []) =>{
         return await pokemonObj
     } catch (error) {
         console.log(error);
-        const pokemonObj = [{id: 1, name: 'that pokemon doesn`t exist', picture: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png"}]
+        const pokemonObj = [{id: 1, name: 'that pokemon doesn`t exist', picture: null}]
     
         return await pokemonObj
     }

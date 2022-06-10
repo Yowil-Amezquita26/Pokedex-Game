@@ -4,16 +4,20 @@
     </div>
      
     <div class="pokemon-container">
-        <img v-if="showPokemon" 
+        <img v-if="imgSrc !== null" 
             :src="imgSrc" 
-            alt="pokemon"
+            alt= ""
             class="">
+        <img v-else
+            src="@/assets/pokeball.jpg" 
+            alt="">
     </div>
 </template>
 
 <script>
+
+
 export default {
-    
     props:{
         pokemonId:{
             required: true
@@ -26,21 +30,22 @@ export default {
             
         } 
     },
+    data(){
+        return{
+            // pokeball: pokeBall
+        }
+    },
     computed: {
         imgSrc(){
             
             return this.pokemonId
-        }
+        },
     }
 
 }
 </script>
 
 <style scoped>
-    .pokemon-container {
-    height: 250px;
-    width: fit-content;
-    }
     .logo{
         height: 200px;
         width: fit-content;
@@ -48,7 +53,7 @@ export default {
         right: 40%;
     }
     img {
-    height: 250px;
+        height: 250px;
     position: absolute;
     
     right: 40%;
@@ -59,4 +64,9 @@ export default {
     -webkit-user-select: none;
     }
 
+    .pokemon-container {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
 </style>
