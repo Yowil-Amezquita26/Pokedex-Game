@@ -7,7 +7,7 @@
         <img v-if="showPokemon" 
             :src="imgSrc" 
             alt="pokemon"
-            class="fade-in">
+            class="fade-in"> 
     </div>
 </template>
 
@@ -29,21 +29,24 @@ export default {
     },
     computed: {
         imgSrc(){
-            return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.pokemonId}.png`
+            return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${this.pokemonId}.png`
         }
     }
 
 }
 </script>
 
-<style scoped>
+<style >
     .pokemon-container {
     height: 200px;
+
     }
     img {
-    height: 200px;
+    height: 250px;
     position: absolute;
-    
+    right: 40%;
+    justify-items: center;
+
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

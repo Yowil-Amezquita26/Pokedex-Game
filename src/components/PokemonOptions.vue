@@ -42,6 +42,7 @@ li:hover {
 }
 
 .options-container {
+    height: 200px;
     display: flex;
     justify-content: center;
 }

@@ -1,10 +1,13 @@
 <template>
-    <h3>Pokedex</h3>
+    <div class="logo">
+        <img src="@/assets/Pokemon-logo-blue.png" alt="" > 
+    </div>
+     
     <div class="pokemon-container">
         <img v-if="showPokemon" 
             :src="imgSrc" 
             alt="pokemon"
-            class="fade-in">
+            class="">
     </div>
 </template>
 
@@ -25,6 +28,7 @@ export default {
     },
     computed: {
         imgSrc(){
+            
             return this.pokemonId
         }
     }
@@ -35,6 +39,13 @@ export default {
 <style scoped>
     .pokemon-container {
     height: 250px;
+    width: fit-content;
+    }
+    .logo{
+        height: 200px;
+        width: fit-content;
+        position: center;
+        right: 40%;
     }
     img {
     height: 250px;
@@ -46,9 +57,6 @@ export default {
     -ms-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
-    }
-    .hidden-pokemon {
-    filter: brightness(0);
     }
 
 </style>
