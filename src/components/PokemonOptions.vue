@@ -1,4 +1,5 @@
 <template>
+  
   <h3>Pokemon options</h3>
   <div class="options-container">
     <ul>

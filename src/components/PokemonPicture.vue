@@ -39,6 +39,7 @@ export default {
 <style >
     .pokemon-container {
     height: 200px;
+    padding: 5%;
 
     }
     img {

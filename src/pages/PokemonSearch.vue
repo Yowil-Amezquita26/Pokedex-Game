@@ -33,6 +33,7 @@ export default {
     components: { PokemonInfo, Pokedex, styles },
     data(){
         return{
+            name: 'pokedex',
             searchPokemon:[{
                 type:Object,
                 id: 1,

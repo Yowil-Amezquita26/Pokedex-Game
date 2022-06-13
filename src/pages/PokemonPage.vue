@@ -5,9 +5,11 @@
         <!-- img pokemon -->
         <PokemonPicture :pokemonId="pokemon.id" :showPokemon="showPokemon" />
         <!-- opciones -->
-        <PokemonOptions :pokemons="pokemonArr"
-                        @selectionPokemon="checkAnswer($event)" 
-                        />
+        <div>
+            <PokemonOptions :pokemons="pokemonArr"
+                            @selectionPokemon="checkAnswer($event)" 
+                            />
+        </div>
         <div v-if="showPokemon">
             <h2 class="fade-in">{{selected}}</h2>
             <button @click="newGame()">New Game</button>
@@ -27,11 +29,13 @@ export default {
     components: { PokemonOptions, PokemonPicture },
     data() {
         return {
+            name: 'pokemonGame',
             pokemonArr: [],
             pokemon: null,
             showPokemon: false,
             emits:['selection'],
-            selected: 'Want to give it a try?'
+            selected: 'Want to give it a try?',
+            activeTab: ""
         }
     },
     methods: {
