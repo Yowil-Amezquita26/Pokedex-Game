@@ -1,9 +1,11 @@
 <template>
     <h1>Which Pokemon you want to see?</h1>
     <h3>insert a Number or Text</h3>
-    <input type= "text" v-model="pokemon"
-            v-on:keypress="view" 
-            placeholder="Search by Number">
+    <div>
+        <input type= "text" v-model="pokemon"
+                v-on:keypress="view" 
+                placeholder="Search by Number">
+    </div>
     <div v-if="!statusPoke" >
         <img src="@/assets/Pokemon-logo-blue.png" alt="" > 
         <h2>Waiting for the search</h2>
@@ -70,3 +72,7 @@ export default {
     }
 }
 </script>
+
+<style>
+
+</style>
