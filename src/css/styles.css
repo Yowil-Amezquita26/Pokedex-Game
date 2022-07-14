@@ -1,10 +1,11 @@
 html, body {
-    background-color: #f1f1f1;
+    background-image: "bacground.png";
+    width: 100%;
     margin: 0px;
+    
 }
 
 .logo {
-    height: 250px;
     position: center;
     display: flex;
     flex-wrap: wrap;

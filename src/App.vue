@@ -10,17 +10,12 @@
 
 import PokemonHome from './pages/PokemonHome.vue'
 
-import PokemonPage from './pages/PokemonPage.vue'
-import PokemonSearch from './pages/PokemonSearch.vue'
-
 
 
 
 export default {
   name: 'App',
   components: {
-    PokemonSearch,
-    PokemonPage,
     PokemonHome,
 }
 }

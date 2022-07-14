@@ -1,7 +1,7 @@
 <template >
     <div class="bodyHome">
         
-        <div v-if="activeTab != 'PokemonHome'" class="navbar">
+        <div v-if="activeTab != 'PokemonHome'" class="navbar navbar-dark bg-dark">
             <div class="buttonNavBar">
                 <button @click="activeTab = 'PokemonHome'">Home</button>
                 <button @click="activeTab = 'PokemonSearch'">Pokedex</button>
@@ -28,6 +28,7 @@
 <script>
 import PokemonPage from './PokemonPage.vue'
 import PokemonSearch from './PokemonSearch.vue'
+
 
 export default {
   components: { PokemonSearch, PokemonPage },

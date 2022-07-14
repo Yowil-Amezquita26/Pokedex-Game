@@ -7,7 +7,7 @@
                 placeholder="Search by Number">
     </div>
     <div v-if="!statusPoke" >
-        <img src="@/assets/Pokemon-logo-blue.png" alt="" > 
+        <img src="@/assets/Pokemon-logo-blue.png" alt="" class="logo" > 
         <h2>Waiting for the search</h2>
         
     </div>
