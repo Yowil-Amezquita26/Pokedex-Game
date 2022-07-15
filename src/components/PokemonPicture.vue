@@ -42,18 +42,6 @@ export default {
     padding: 5%;
 
     }
-    img {
-    height: 250px;
-    position: absolute;
-    right: 40%;
-    justify-items: center;
-
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    }
     .hidden-pokemon {
     filter: brightness(0);
     }

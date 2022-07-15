@@ -1,16 +1,14 @@
 <template>
-    <div class="logo">
-        <img src="@/assets/Pokemon-logo-blue.png" alt="" > 
-    </div>
-     
+    
     <div class="pokemon-container">
+        <img src="@/assets/Pokemon-logo-blue.png" alt="" class="pokemon-image" > 
         <img v-if="imgSrc !== null" 
             :src="imgSrc" 
             alt= ""
-            class="">
+            class="pokemon-image">
         <img v-else
             src="@/assets/pokeball.jpg" 
-            alt="">
+            alt="img">
     </div>
 </template>
 
@@ -52,21 +50,22 @@ export default {
         position: center;
         right: 40%;
     }
-    img {
-        height: 250px;
-    position: absolute;
-    
-    right: 40%;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
+    .pokemon-image {
+        width: 15rem;
+        justify-items: center;
+        user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
     }
 
     .pokemon-container {
-        height: 250px;
+        height: 50%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
+
 </style>

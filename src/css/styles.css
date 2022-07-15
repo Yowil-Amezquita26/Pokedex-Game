@@ -1,5 +1,8 @@
 html, body {
-    background-image: "bacground.png";
+    /* background-image: "bacground.png"; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 100%;
     margin: 0px;
     
@@ -9,6 +12,7 @@ html, body {
     position: center;
     display: flex;
     flex-wrap: wrap;
+    position: 50% 50%;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

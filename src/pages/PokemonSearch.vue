@@ -6,12 +6,12 @@
                 v-on:keypress="view" 
                 placeholder="Search by Number">
     </div>
-    <div v-if="!statusPoke" >
-        <img src="@/assets/Pokemon-logo-blue.png" alt="" class="logo" > 
+    <div v-if="!statusPoke" class="" >
         <h2>Waiting for the search</h2>
         
+        
     </div>
-    <div  v-else class="body">
+    <div  v-else class="">
         <!-- img pokemon -->
         <Pokedex :pokemonId="returnPicture" :showPokemon="true" />
         <!-- opciones -->

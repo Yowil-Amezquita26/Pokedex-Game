@@ -3,9 +3,9 @@
         
         <div v-if="activeTab != 'PokemonHome'" class="navbar navbar-dark bg-dark">
             <div class="buttonNavBar">
-                <button @click="activeTab = 'PokemonHome'">Home</button>
-                <button @click="activeTab = 'PokemonSearch'">Pokedex</button>
-                <button @click="activeTab = 'PokemonPage'">Who's that Pokemon?</button>
+                <a @click="activeTab = 'PokemonHome'">Home</a>
+                <a @click="activeTab = 'PokemonSearch'">Pokedex</a>
+                <a @click="activeTab = 'PokemonPage'">Who's that Pokemon?</a>
 
             </div>
         </div>
@@ -67,7 +67,7 @@ li:hover {
 .navbar{
     height: 5.15%;
     top: 0;
-    background-color: blueviolet ;
+    background-color: azure ;
     
     
 
@@ -80,6 +80,9 @@ li:hover {
 }
 .bodyHome{
   background-image: url('@/assets/background.png') ; 
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   width: 100vw;
   height:100vh;
   display: flex;
