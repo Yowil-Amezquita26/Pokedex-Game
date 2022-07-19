@@ -11,7 +11,7 @@
                             />
         </div>
         <div v-if ="showPokemon">
-            <h2 class="fade-in">{{selected}}</h2>
+            <h2 >{{selected}}</h2>
             <button @click="newGame()">New Game</button>
         </div>
         

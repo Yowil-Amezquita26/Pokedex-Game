@@ -1,6 +1,6 @@
 <template>
     
-    <div class="pokemon-container">
+    <div class="pokedex-container">
         <img src="@/assets/Pokemon-logo-blue.png" alt="" class="pokemon-image" > 
         <img v-if="imgSrc !== null" 
             :src="imgSrc" 
@@ -60,12 +60,5 @@ export default {
         -webkit-user-select: none;
     }
 
-    .pokemon-container {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
 </style>

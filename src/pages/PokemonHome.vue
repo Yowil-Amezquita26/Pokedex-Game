@@ -2,10 +2,10 @@
     <div class="bodyHome">
         
         <div v-if="activeTab != 'PokemonHome'" class="navbar navbar-dark bg-dark">
-            <div class="buttonNavBar">
-                <a @click="activeTab = 'PokemonHome'">Home</a>
-                <a @click="activeTab = 'PokemonSearch'">Pokedex</a>
-                <a @click="activeTab = 'PokemonPage'">Who's that Pokemon?</a>
+            <div class="NavBarContainer">
+                <button class="buttonNavbar" @click="activeTab = 'PokemonHome'">Home</button>
+                <button class="buttonNavbar" @click="activeTab = 'PokemonSearch'">Pokedex</button>
+                <button class="buttonNavbar" @click="activeTab = 'PokemonPage'">Who's that Pokemon?</button>
 
             </div>
         </div>
@@ -67,32 +67,43 @@ li:hover {
 .navbar{
     height: 5.15%;
     top: 0;
-    background-color: azure ;
+    background-color:#2A4280;
     
-    
-
 }
-.buttonNavBar{
+.NavBarContainer{
     /* padding: 2%; */
+    border: none;
     justify-content: center;
     display: flex;
     justify-content: baseline;
 }
+
+.buttonNavbar{
+    border: none;
+    padding: 0.2;
+    display: inline-block;
+    background-color: #EAEAED;
+    font-size: 18px;
+}
+.buttonNavbar:hover {
+  background-color: #2CB3D9; 
+  color: white;
+}
 .bodyHome{
-  background-image: url('@/assets/background.png') ; 
-  background-size: cover;
+    background-image: url('@/assets/background.png') ; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  width: 100vw;
-  height:100vh;
-  display: flex;
-  flex-direction: column;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
 
-  position: absolute;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   
 }
     

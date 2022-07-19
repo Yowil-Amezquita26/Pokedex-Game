@@ -1,7 +1,7 @@
 <template>
     <h1>Which Pokemon you want to see?</h1>
     <h3>insert a Number or Text</h3>
-    <div>
+    <div class="search-input">
         <input type= "text" v-model="pokemon"
                 v-on:keypress="view" 
                 placeholder="Search by Number">

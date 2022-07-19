@@ -3,7 +3,7 @@
   <h3>Pokemon options</h3>
   <div class="options-container">
     <ul>
-      <li v-for="pokemon in pokemons" 
+      <li class="option-button" v-for="pokemon in pokemons" 
           :key="pokemon.id"
           @click="$emit( 'selectionPokemon', pokemon.id )">
           {{pokemon.name}}</li>
@@ -27,18 +27,19 @@ export default {
 
 <style scoped>
 ul {
+  justify-items: center;
     list-style-type: none;
 }
-li {
+.option-button {
     background-color: white;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin-bottom: 10px;
-    width: 250px;
+    width: 200px;
 }
 
-li:hover {
+.option-button:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -46,6 +47,7 @@ li:hover {
     height: 200px;
     display: flex;
     justify-content: center;
+    
 }
 
 

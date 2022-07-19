@@ -1,7 +1,8 @@
 <template>
     <h3>Pokemon picture</h3>
     <div class="pokemon-container">
-        <img :src='imgSrc'
+        <img v-if="!showPokemon" 
+            :src="imgSrc"
             class="hidden-pokemon"
             alt="pokemon">
         <img v-if="showPokemon" 
@@ -37,13 +38,10 @@ export default {
 </script>
 
 <style >
-    .pokemon-container {
-    height: 200px;
-    padding: 5%;
-
-    }
+    
     .hidden-pokemon {
-    filter: brightness(0);
+        width: 15rem;
+        filter: brightness(0);
     }
 
 </style>
