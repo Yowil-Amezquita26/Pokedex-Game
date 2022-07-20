@@ -1,8 +1,10 @@
 <template >
     <div class="bodyHome">
         
-        <div v-if="activeTab != 'PokemonHome'" class="navbar navbar-dark bg-dark">
-            <div class="NavBarContainer">
+        <div v-if="activeTab != 'PokemonHome'" class="navbar">
+            <div class="navBarContainer">
+                <img src="@/assets/pngwing.com.png" class="pokeLogo" alt="">
+
                 <button class="buttonNavbar" @click="activeTab = 'PokemonHome'">Home</button>
                 <button class="buttonNavbar" @click="activeTab = 'PokemonSearch'">Pokedex</button>
                 <button class="buttonNavbar" @click="activeTab = 'PokemonPage'">Who's that Pokemon?</button>
@@ -16,6 +18,7 @@
                     <li @click="activeTab = 'PokemonSearch'">pokedex</li>
                     <li @click="activeTab = 'PokemonPage'">Who`s that Pokemon?</li>
                 </ul>
+
             </div>
         </div>
         <component :is="activeTab"></component>
@@ -39,7 +42,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
 ul {
     list-style-type: none;
 }
@@ -55,9 +58,7 @@ li {
 li:hover {
     background-color: rgba(255, 27, 2, 0.05);
 }
-/* button {
-    left: 5%;
-} */
+
 .home-container {
     height: 200px;
     display: flex;
@@ -65,23 +66,18 @@ li:hover {
     
 }
 .navbar{
-    height: 5.15%;
     top: 0;
     background-color:#2A4280;
     
 }
-.NavBarContainer{
-    /* padding: 2%; */
-    border: none;
-    justify-content: center;
-    display: flex;
-    justify-content: baseline;
-}
+
 
 .buttonNavbar{
     border: none;
     padding: 0.2;
     display: inline-block;
+    position: relative;
+    text-decoration: none;
     background-color: #EAEAED;
     font-size: 18px;
 }
@@ -98,6 +94,7 @@ li:hover {
     height:100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 
     position: absolute;
     -webkit-background-size: cover;

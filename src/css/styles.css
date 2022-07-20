@@ -1,5 +1,4 @@
 html, body {
-    /* background-image: "bacground.png"; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -28,14 +27,26 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.logo {
-    position: center;
-    display: flex;
-    flex-wrap: wrap;
-    position: 50% 50%;
+
+.pokemon-image {
+    width: 13rem;
+    justify-items: center;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.pokeLogo {
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
 }

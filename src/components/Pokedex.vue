@@ -43,13 +43,7 @@ export default {
 }
 </script>
 
-<style scoped>
-    .logo{
-        height: 200px;
-        width: fit-content;
-        position: center;
-        right: 40%;
-    }
+<style >
     .pokemon-image {
         width: 15rem;
         justify-items: center;
